@@ -1,2 +1,2 @@
 # se-project
-Software Engineering course project - Camus Task Planner
+Software Engineering course project - Campus Task Planner
