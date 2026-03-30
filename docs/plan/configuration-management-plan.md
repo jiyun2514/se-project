@@ -1,6 +1,6 @@
 # 형상관리 계획서
 
-Version: v1.0.0
+Version: v1.0.1
 Date: 2026-03-30
 Author: 유지윤
 
@@ -20,6 +20,8 @@ Author: 유지윤
 - 테스트 문서
 - 소스코드
 
+---
+
 ## 2. 형상 항목(Configuration Items)
 
 | 구분 | 형상 항목 | 파일 위치 |
@@ -35,6 +37,8 @@ Author: 유지윤
 
 -> 모든 형상 항목은 Git 저장소를 통해 관리한다. 
 
+---
+
 ## 3. 형상 식별 방법
 ### 3.1 버전 관리 규칙
 
@@ -46,15 +50,18 @@ vMajor.Minor.Patch
 - Patch: 오타/경미 수정
 
 ### 3.2 태그 전략
-기준선(Baseline)		  설명
-requirements_freeze	요구사항 확정
-design_complete	  	설계 완료
-beta_release		    시제품 완료
-final_release		    최종 제출
+| 기준선 (Baseline) | 설명 |
+|------------------|------|
+| requirements_freeze | 요구사항 확정 |
+| design_complete | 설계 완료 |
+| beta_release | 시제품 완료 |
+| final_release | 최종 제출 |
 
 Git 명령 예: (Commit한 후) git tag requirements_freeze
 
 -> Git tag를 활용하여 각 개발 단계의 기준선을 관리한다.
+
+---
 
 ## 4. 변경 관리 절차
 ### 4.1 변경 요청 절차
@@ -67,16 +74,20 @@ Git 명령 예: (Commit한 후) git tag requirements_freeze
 6. 변경 이력 기록
 
 ### 4.2 브랜치 전략
-main		    -> 최종 결과물
-draft		    -> 작업 중 문서
-review	    -> 검토 단계
-experiment	-> 실험용 설계안
+| 브랜치 | 역할 |
+|--------|------|
+| main | 최종 결과물 |
+| draft | 작업 중 문서 |
+| review | 검토 단계 |
+| experiment | 실험용 설계안 |
 
 브랜치 생성 예:
-	git branch draft
-	git checkout draft
+- git branch draft
+- git checkout draft
 
 -> 기능 개발 및 수정은 별도 브랜치에서 수행 후 main에 병합한다.
+
+---
 
 ## 5. 형상 통제 방법
 
@@ -85,15 +96,17 @@ experiment	-> 실험용 설계안
 예: [CR-01] 요구사항 3번 수정 - 로그인 정책 변경
 
 구분자(prefix) 예시:
-[CR]    Change Request (변경 요청)
-[FEAT]  Feature (새 기능 추가)
-[FIX]   Bug Fix (오류 수정)
-[DOCS]  Documentation (문서 수정)
+- [CR]    Change Request (변경 요청)
+- [FEAT]  Feature (새 기능 추가)
+- [FIX]   Bug Fix (오류 수정)
+- [DOCS]  Documentation (문서 수정)
 
 ※ 변경 요청(CR)이 있는 경우에는 CR 번호를 함께 기록한다.
    예: [CR-01], [CR-02]
 
 ** 주 1회 이상 commit 수행 **
+
+---
 
 ## 6. 형상 상태 기록
 ### 6.1 기록 도구
@@ -107,12 +120,16 @@ v1.0.0 - 요구사항 확정
 v1.1.0 - 설계 구조 변경
 v1.1.1 - 오타 수정
 
+---
+
 ## 7. 형상 감사
 ### 7.1 내부 점검 기준
 
 - 모든 산출물이 Git에 등록되어 있는가?
 - 태그가 단계별로 존재하는가?
 - 변경 사유가 commit 메시지에 기록되어 있는가?
+
+---
 
 ## 8. 백업 및 저장소 관리
 
