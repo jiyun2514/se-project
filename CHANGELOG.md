@@ -1,5 +1,23 @@
 # CHANGELOG
 
+## v1.2.0 - 2026-05-24
+
+### Requirement Analysis Update
+
+### Added
+- Added friend management feature requirements.
+- Added shared schedule and team schedule management requirements.
+- Added schedule notification feature requirements.
+- Added collaboration-related classes and CRC cards.
+- Added dynamic analysis scenarios for schedule sharing and notifications.
+
+### Changed
+- Updated requirement analysis to support collaboration features.
+- Extended interface analysis for shared schedule management.
+- Updated requirement traceability table.
+
+---
+
 ## v1.1.0 - 2026-05-13
 
 ### Project Management Plan
