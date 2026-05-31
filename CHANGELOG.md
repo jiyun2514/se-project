@@ -1,5 +1,16 @@
 # CHANGELOG
 
+## v1.2.1 - 2026-05-31
+
+### Project Management Plan
+
+### Improved
+- Expanded risk management section with additional project risk factors.
+- Added mitigation strategies for Git conflicts and requirement changes.
+- Improved risk response planning for testing and external dependency issues.
+
+---
+
 ## v1.2.0 - 2026-05-24
 
 ### Requirement Analysis Update
